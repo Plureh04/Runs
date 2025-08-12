@@ -36,17 +36,17 @@ python
     import pandas as pd
     import os
 
-# List files in the content directory
-print(os.listdir())
+    # List files in the content directory
+    print(os.listdir())
 
-# Verify your CSV file is present
-# If your file is named 'data.csv', for example:
-if 'data.csv' in os.listdir():
+    # Verify your CSV file is present
+    # If your file is named 'data.csv', for example:
+    if 'data.csv' in os.listdir():
     print("File successfully uploaded!")
     df = pd.read_csv('data.csv')
     print(df.head())
-else:
-    print("File not found - please upload again")
+        else:
+            print("File not found - please upload again")
 
 5. Run the Project
 
