@@ -17,10 +17,6 @@ To run this project, please follow these steps to set up your environment in Goo
 3. Upload the CSV File to Google Colab
 
 In your Colab notebook:
-python:
-
-    from google.colab import files
-    uploaded = files.upload()
 
 Click the "Choose Files" button that appears when you run this cell
 
@@ -34,19 +30,13 @@ After uploading, verify the file is available by running:
 python
 
     import pandas as pd
-    import os
 
-    # List files in the content directory
-    print(os.listdir())
+    # Read the CSV file into a pandas DataFrame
+    df = pd.read_csv('Golden.csv')
 
-    # Verify your CSV file is present
-    # If your file is named 'data.csv', for example:
-    if 'data.csv' in os.listdir():
-    print("File successfully uploaded!")
-    df = pd.read_csv('data.csv')
-    print(df.head())
-        else:
-            print("File not found - please upload again")
+    filtered = df[df['Adittional comment'] == 'good']
+
+    print(filtered)
 
 5. Run the Project
 
