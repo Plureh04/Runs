@@ -1,6 +1,3 @@
-Project README
-Getting Started with Google Colab
-
 To run this project, please follow these steps to set up your environment in Google Colab:
 1. Copy the Code to Google Colab
 
