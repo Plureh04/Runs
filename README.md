@@ -17,24 +17,24 @@ To run this project, please follow these steps to set up your environment in Goo
 3. Upload the CSV File to Google Colab
 
 In your Colab notebook:
-python
+python:
 
-from google.colab import files
-uploaded = files.upload()
+    from google.colab import files
+    uploaded = files.upload()
 
-    Click the "Choose Files" button that appears when you run this cell
+Click the "Choose Files" button that appears when you run this cell
 
-    Select the CSV file you downloaded
+Select the CSV file you downloaded
 
-    Wait for the upload to complete
+Wait for the upload to complete
 
 4. Verify the File is in Colab's Content
 
 After uploading, verify the file is available by running:
 python
 
-import pandas as pd
-import os
+    import pandas as pd
+    import os
 
 # List files in the content directory
 print(os.listdir())
